@@ -12,7 +12,7 @@ try {
   if (!user1)return res.status(400).send({status: false, message: "USER1  is not correct", });
 
   let user2 = await users.findOne({_id:USER2 });
-  if (!user2)return res.status(400).send({status: false, message: "USER1  is not correct", });
+  if (!user2)return res.status(400).send({status: false, message: "USER2  is not correct", });
   let user1Amount=user1.totalAmount
   let user1Dec=user1.totalAmount-amount
   let user2Inc=user2.totalAmount+amount

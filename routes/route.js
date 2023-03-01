@@ -2,10 +2,9 @@ const router = require("express").Router()
 const{userCreation}=require("../controllers/usersController")
 const{createTransaction}=require("../controllers/transactionController")
 
-// customer
+// USERS
 router.post("/users",userCreation)
-
-// ORDER
+// TRANSACTION
 router.post("/transaction",createTransaction);
 
 
